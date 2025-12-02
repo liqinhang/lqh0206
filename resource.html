@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>资源仓库</title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+</style>
+  
+  
+</head>
+<body>
+  <article class="markdown-body"><h2 class="atx" id="一学习编程的网站">一.学习编程的网站</h2>
+<h4 class="atx" id="学习类">学习类</h4>
+<ul>
+<li><p><a href="https://oi-wiki.org/">OI Wiki</a></p>
+</li>
+<li><p><a href="https://www.csdn.net/">CSDN</a></p>
+</li>
+<li><p><a href="https://csdiy.wiki/">CS自学指南</a></p>
+</li>
+<li><p><a href="https://www.xuetangx.com/">学堂在线</a></p>
+</li>
+<li><p><a href="https://www.hello-algo.com/">Hello 算法</a></p>
+</li>
+<li><p><a href="https://ed.qcea.top/ChaIndex/Resources/Ebook/computer/c/C%20Primer%20Plus%EF%BC%88%E7%AC%AC6%E7%89%88%EF%BC%89%E4%B8%AD%E6%96%87%E7%89%88.pdf">C Primer Plus</a></p>
+</li>
+<li><p><a href="https://ed.qcea.top/ChaIndex/Resources/Ebook/computer/c++/C++%20Primer%20Plus%EF%BC%88%E7%AC%AC5%E7%89%88%EF%BC%89.pdf">C++ Primer Plus</a></p>
+</li>
+<li><p><a href="https://ed.qcea.top/ChaIndex/Resources/Ebook/computer/algorithms/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E5%85%A5%E9%97%A8%E7%BB%8F%E5%85%B8%EF%BC%88%E7%AC%AC2%E7%89%88%EF%BC%89%20(%E5%88%98%E6%B1%9D%E4%BD%B3)%20(Z-Library).epub">算法竞赛入门经典（第2版） (刘汝佳)</a></p>
+</li>
+<li><p><a href="https://ed.qcea.top/ChaIndex/Resources/Ebook/computer/linux/LinuxProbe.pdf">Linux就该这样学</a></p>
+</li>
+<li><p><a href="https://ed.qcea.top/ChaIndex/Resources/Ebook/computer/Python/Python%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5%EF%BC%88%E7%AC%AC2%E7%89%88%EF%BC%89%20(%5B%E7%BE%8E%5D%E5%9F%83%E9%87%8C%E5%85%8B%C2%B7%E9%A9%AC%E7%91%9F%E6%96%AF%EF%BC%88Eric%20Matthes%EF%BC%89)%20(Z-Library).pdf">Python编程：从入门到实践</a></p>
+</li>
+<li><p><a href="https://ed.qcea.top/ChaIndex/Resources/Ebook/MCM">数学建模相关</a></p>
+</li>
+</ul>
+<h4 class="atx" id="做题类">做题类</h4>
+<ul>
+<li><p><a href="https://www.luogu.com.cn/">洛谷</a></p>
+</li>
+<li><p><a href="https://leetcode.cn/problemset/">力扣 (LeetCode)</a></p>
+</li>
+<li><p><a href="https://codeforces.com/">Codeforces</a></p>
+</li>
+<li><p><a href="https://www.nowcoder.com/">牛客</a></p>
+<p></p>
+</li>
+</ul>
+<h2 class="atx" id="二可以使用的ai工具">二.可以使用的AI工具</h2>
+<ul>
+<li><p><a href="https://kimi.moonshot.cn/">Kimi——长文本、多模态、写作</a></p>
+</li>
+<li><p><a href="https://chat.deepseek.com/sign_in">DeepSeek——代码很强</a></p>
+</li>
+<li><p><em><a href="https://aistudio.google.com/">‎Gemini——善于总结</a></em></p>
+</li>
+<li><p><em><a href="https://gamma.app/">Gamma——生成PPT和网页</a></em></p>
+</li>
+<li><p><a href="https://www.doubao.com/chat/">豆包 - 字节跳动旗下 AI 智能助手</a></p>
+<p></p>
+</li>
+</ul>
+<h2 class="atx" id="三工具的下载">三.工具的下载</h2>
+<p><a href="https://typoraio.cn/">Typora</a>  markdown编译器</p>
+<p><a href="https://notepad-plus-plus.org/downloads/">Notepad++</a> 轻量级文本编译器</p>
+<p><a href="https://www.7-zip.org/">7-zip</a>  免费解压，压缩</p>
+<p><a href="https://sourceforge.net/projects/dev-cpp-2020/files/v6.7.5/">Red Panda Dev-C++ </a>  体感舒服</p>
+<p><a href="https://code.visualstudio.com/">Visual Studio Code</a>  功能齐全</p>
+<p><a href="https://www.jetbrains.com/pycharm/download/">PyCharm Community Edition</a>  </p>
+<p><a href="https://www.eclipse.org/downloads/">Java编译器Eclipse IDE</a></p>
+<p></p>
+<h2 class="atx" id="四建议">四.建议</h2>
+<h3 class="atx" id="1、学习心态与效率提升">1、学习心态与效率提升</h3>
+<ul>
+<li><p><strong>1. ❌ 避坑：只看不敲</strong></p>
+<ul>
+<li><strong>指南：</strong> 不要只是观看教程视频或阅读代码。请<strong>手动输入</strong>每一个代码块，即使是复制粘贴，也要在粘贴后<strong>理解</strong>并<strong>运行</strong>一次，确保能复现结果。</li>
+</ul>
+</li>
+<li><p><strong>2. ❌ 避坑：害怕报错</strong></p>
+<ul>
+<li><strong>指南：</strong> <strong>报错是学习的一部分！</strong> 遇到错误，请先认真阅读<strong>最后一行错误提示</strong>。不要直接截图问人，要学会将关键的英文错误信息复制到 Google/Baidu 搜索。</li>
+</ul>
+</li>
+<li><p><strong>3. ✅ 技巧：立刻学习 Git</strong></p>
+<ul>
+<li><strong>指南：</strong> 无论代码量多少，都请将您的每一个练习项目放入 <strong>Git</strong> 进行版本控制。这不仅能保存您的代码历史，也是未来工作必备技能。</li>
+</ul>
+</li>
+<li><p><strong>4. ✅ 技巧：多用 IDE 功能</strong></p>
+<ul>
+<li><strong>指南：</strong> 充分利用 VS Code、PyCharm、IntelliJ IDEA 的<strong>自动补全、格式化代码、快速重命名</strong>等功能。它们可以帮助您避免低级语法错误，并养成良好的编码习惯。</li>
+</ul>
+</li>
+<li><p><strong>5. ✅ 技巧：合理利用 AI 辅助</strong></p>
+<ul>
+<li><strong>指南：</strong> AI 工具是强大的辅助，但不要将其作为主要答案来源。让 AI 帮你<strong>解释代码、重构逻辑</strong>或<strong>查阅 API</strong>，但<strong>避免让 AI 代写整个项目</strong>，要保持自己对代码的控制权和理解。<p></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="atx" id="2、日常代码管理与习惯">2、日常代码管理与习惯</h3>
+<table>
+<thead>
+<tr>
+<th><strong>习惯/工具</strong></th>
+<th><strong>建议操作</strong></th>
+<th><strong>复制要点</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>代码注释</strong></td>
+<td>及时、清晰地注释<strong>为什么</strong>这么做，而不是这段代码<strong>在做什么</strong>。</td>
+<td><code># 这是为什么... 而不是 # 这是加法</code></td>
+</tr>
+<tr>
+<td><strong>命名规范</strong></td>
+<td>变量和函数名要具有描述性，避免使用 <code>a, b, c</code> 或拼音。</td>
+<td><code>user_name</code>, <code>calculate_price()</code></td>
+</tr>
+<tr>
+<td><strong>提问技巧</strong></td>
+<td>提问时，附上：1. 想做什么，2. 遇到的问题，3. <strong>错误提示</strong>，4. 您的<strong>代码</strong>。</td>
+<td><code>提问前先准备 MRE (Minimal Reproducible Example)</code></td>
+</tr>
+</tbody></table>
+<p></p>
+<h2 class="atx" id="五教学篇---c基础">五.教学篇---C++基础</h2>
+<h3 class="atx" id="c-编程语言">C++ 编程语言</h3>
+<p>C++ 是由比雅尼·斯特劳斯特鲁普（Bjarne Stroustrup）开发的最常用和最受欢迎的编程语言。C++ 是一种高级的面向对象编程语言。这种语言允许开发者编写干净且高效的代码，用于大型应用程序和软件开发、游戏开发以及操作系统编程。C++ 是对 C 编程语言的扩展，加入了面向对象编程（OOPs）的特性，并用于开发计算机程序。这个 C++ 教程将涵盖从基础到高级的所有 C++ 主题，如 C++ 基础、C++ 函数、C++ 类、面向对象编程（OOPs）和 STL 概念。</p>
+<ul>
+<li>C++ 是最常用和最受欢迎的编程语言之一。</li>
+<li>C++ 被用于开发操作系统、嵌入式系统和图形用户界面。</li>
+<li>它是一种面向对象的编程语言，实现了所有面向对象编程（OOP）的概念，如抽象、封装和继承，这些特性为程序提供了清晰的结构，并允许代码重用，从而降低开发成本并提供安全性。</li>
+<li>它是可移植的，可以用来创建适应多种平台的应用程序。</li>
+<li>C++ 容易学习，因此你可以选择它作为你的第一个编程语言。</li>
+<li>由于其语法类似于 C、Java 和 C#，它使得程序员在切换到 C++ 时变得容易。</li>
+</ul>
+<h2 class="setext" id="c-教程--目录">C++ 教程 – 目录</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_overview">C++概述</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_basics">C++基础</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_variables_constants">C++中的变量和常量</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_data_types">C++中的数据类型和字面量</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_operators">C++中的运算符</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_input_output">C++中的输入/输出</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_control_statements">C++中的控制语句</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_functions">C++中的函数</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_pointers">C++中的指针和引用</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_arrays">C++中的数组</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_strings">C++中的字符串</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_struct_union">C++中的结构体和共用体</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_dynamic_memory">C++中的动态内存管理</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_oops">C++中的面向对象编程</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_encapsulation">C++中的封装和抽象</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_polymorphism">C++中的多态</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_function_overloading">C++中的函数重载</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_operator_overloading">C++中的运算符重载</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_inheritance">C++中的继承</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_virtual">C++中的虚函数</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_expception_handling">C++中的异常处理</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_files_streams">C++中的文件和流</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_templates">C++中的模板</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_stl">C++中的STL</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_iterators">C++中的迭代器</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_preprocessers">C++中的预处理器</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_namespace">C++中的命名空间</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_advanced">高级C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#c_vs_cpp">C与C++的区别</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_vs_java">C++与Java的区别</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cp_cpp">C++中的竞赛编程</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/#cpp_interview">C++中的面试问题</a></li>
+</ul>
+<h2 class="setext" id="c-概述">C++ 概述</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/introduction-to-c-programming-language/">C++ 介绍</a></li>
+<li><a href="https://www.geeksforgeeks.org/features-of-c/">C++ 特性</a></li>
+<li><a href="https://www.geeksforgeeks.org/history-of-c/">C++ 历史</a></li>
+<li><a href="https://www.geeksforgeeks.org/interesting-facts-about-c/">关于 C++ 的有趣事实</a></li>
+<li><a href="https://www.geeksforgeeks.org/setting-c-development-environment/">设置 C++ 开发环境</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-between-c-and-c/">C++ 和 C 的相似性与差异</a></li>
+</ul>
+<h2 class="setext" id="c-基础知识">C++ 基础知识</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/writing-first-c-program-hello-world-example/">第一个 C++ 程序</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-basic-syntax/">C++ 基本语法</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-comments/">C++ 注释</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-tokens/">C++ 词法单元</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-identifiers/">C++ 标识符</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-keywords/">C++ 关键字</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-between-keyword-and-identifier/">关键字与标识符的区别</a></li>
+</ul>
+<h2 class="setext" id="c-变量与常量">C++ 变量与常量</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/cpp-variables/">C++ 变量</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-constants/">C++ 常量</a></li>
+<li><a href="https://www.geeksforgeeks.org/scope-of-variables-in-c/">C++ 变量的作用域</a></li>
+<li><a href="https://www.geeksforgeeks.org/storage-classes-in-c-with-examples/">C++ 存储类</a></li>
+<li><a href="https://www.geeksforgeeks.org/static-keyword-cpp/">C++ 静态变量</a></li>
+</ul>
+<h2 class="setext" id="c-数据类型与字面量">C++ 数据类型与字面量</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/cpp-data-types/">C++ 数据类型</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-literals/">C++ 字面量</a></li>
+<li><a href="https://www.geeksforgeeks.org/derived-data-types-in-c/">C++ 派生数据类型</a></li>
+<li><a href="https://www.geeksforgeeks.org/user-defined-data-types-in-c/">C++ 用户自定义数据类型</a></li>
+<li><a href="https://www.geeksforgeeks.org/data-type-ranges-and-their-macros-in-c/">C++ 数据类型范围及其宏</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-type-modifiers/">C++ 类型修饰符</a></li>
+<li><a href="https://www.geeksforgeeks.org/type-conversion-in-c/">C++ 数据类型转换</a></li>
+<li><a href="https://www.geeksforgeeks.org/casting-operators-in-cpp/">C++ 类型转换运算符</a></li>
+</ul>
+<h2 class="setext" id="c-运算符">C++ 运算符</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/operators-in-cpp/">C++ 运算符</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-arithmetic-operators/">C++ 算术运算符</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-unary-operators/">C++ 一元运算符</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-bitwise-operators/">C++ 位运算符</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-relational-operators/">C++ 关系运算符</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-logical-operators/">C++ 逻辑运算符</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-assignment-operators/">C++ 赋值运算符</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-ternary-or-conditional-operator/">C++ 三元/条件运算符</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-sizeof-operator/">C++ sizeof 运算符</a></li>
+<li><a href="https://www.geeksforgeeks.org/scope-resolution-operator-in-c/">C++ 范围解析运算符</a></li>
+</ul>
+<h2 class="setext" id="c-输入输出">C++ 输入/输出</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/basic-input-output-c/">C++ 基本输入/输出</a></li>
+<li><a href="https://www.geeksforgeeks.org/cin-in-c/">C++ 标准输入流 (cin)</a></li>
+<li><a href="https://www.geeksforgeeks.org/cout-in-c/">C++ 标准输出流 (cout)</a></li>
+<li><a href="https://www.geeksforgeeks.org/cerr-standard-error-stream-object-in-cpp/">C++ 标准错误流 (cerr)</a></li>
+<li><a href="https://www.geeksforgeeks.org/manipulators-in-c-with-examples/">C++ 输入/输出操控符</a></li>
+</ul>
+<h2 class="setext" id="c-控制语句">C++ 控制语句</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/cpp-decision-making/">C++ 决策语句</a></li>
+</ul>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/c-c-if-statement-with-examples/">C++ if 语句</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-c-if-else-statement-with-examples/">C++ if-else 语句</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-c-if-else-if-ladder-with-examples/">C++ if-else-if 梯形结构</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-nested-if-else-statement/">C++ 嵌套 if-else 语句</a></li>
+<li><a href="https://www.geeksforgeeks.org/switch-statement-cc/">C++ switch 语句</a></li>
+<li><a href="https://www.geeksforgeeks.org/jump-statements-in-c/">C++ 跳转语句</a></li>
+<li><a href="https://www.geeksforgeeks.org/loops-in-c-and-cpp/">C++ 循环</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-c-for-loop-with-examples/">C++ for 循环</a></li>
+<li><a href="https://www.geeksforgeeks.org/range-based-loop-c/">C++ 基于范围的 for 循环</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-c-while-loop-with-examples/">C++ while 循环</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-c-do-while-loop-with-examples/">C++ do…while 循环</a></li>
+</ul>
+<h2 class="setext" id="c-函数">C++ 函数</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/functions-in-c/">C++ 函数</a></li>
+<li><a href="https://www.geeksforgeeks.org/return-statement-in-cpp-with-examples/">C++ return 语句</a></li>
+<li><a href="https://www.geeksforgeeks.org/parameter-passing-techniques-in-cpp/">C++ 参数传递技术</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-between-call-by-value-and-call-by-reference/">值传递与引用传递的区别</a></li>
+<li><a href="https://www.geeksforgeeks.org/default-arguments-c/">C++ 默认参数</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-recursion/">C++ 递归</a></li>
+<li><a href="https://www.geeksforgeeks.org/inline-functions-cpp/">C++ 内联函数</a></li>
+<li><a href="https://www.geeksforgeeks.org/lambda-expression-in-c/">C++ Lambda 表达式</a></li>
+</ul>
+<h2 class="setext" id="c-指针和引用">C++ 指针和引用</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/pointers-and-references-in-c/">C++ 指针和引用</a></li>
+<li><a href="https://www.geeksforgeeks.org/pointers-c-examples/">C++ 指针</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-pointer-arithmetic/">C++ 指针运算</a></li>
+<li><a href="https://www.geeksforgeeks.org/dangling-void-null-wild-pointers/">悬空指针、空指针、无类型指针和野指针</a></li>
+<li><a href="https://www.geeksforgeeks.org/applications-of-pointers-in-c-cpp/">指针的应用</a></li>
+<li><a href="https://www.geeksforgeeks.org/understanding-nullptr-c/">C++ nullptr</a></li>
+<li><a href="https://www.geeksforgeeks.org/references-in-c/">C++ 引用</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-25/">引用是否可以指向无效位置？</a></li>
+<li><a href="https://www.geeksforgeeks.org/pointers-vs-references-cpp/">C++ 中指针与引用的区别</a></li>
+<li><a href="https://www.geeksforgeeks.org/passing-by-pointer-vs-passing-by-reference-in-c/">在 C++ 中通过指针传递与通过引用传递的区别</a></li>
+<li><a href="https://www.geeksforgeeks.org/when-do-we-pass-arguments-by-reference-or-pointer/">我们什么时候通过引用或指针传递参数？</a></li>
+</ul>
+<h2 class="setext" id="c-数组">C++ 数组</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/pointers-and-references-in-c/">C++ 指针和引用</a></li>
+<li><a href="https://www.geeksforgeeks.org/pointers-c-examples/">C++ 指针</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-pointer-arithmetic/">C++ 指针运算</a></li>
+<li><a href="https://www.geeksforgeeks.org/dangling-void-null-wild-pointers/">悬挂指针、空指针、空指针和野指针</a></li>
+<li><a href="https://www.geeksforgeeks.org/applications-of-pointers-in-c-cpp/">指针的应用</a></li>
+<li><a href="https://www.geeksforgeeks.org/understanding-nullptr-c/">C++ nullptr</a></li>
+<li><a href="https://www.geeksforgeeks.org/references-in-c/">C++ 引用</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-25/">引用能否引用无效位置？</a></li>
+<li><a href="https://www.geeksforgeeks.org/pointers-vs-references-cpp/">C++ 中指针与引用的区别</a></li>
+<li><a href="https://www.geeksforgeeks.org/passing-by-pointer-vs-passing-by-reference-in-c/">通过指针传递与通过引用传递的区别</a></li>
+<li><a href="https://www.geeksforgeeks.org/when-do-we-pass-arguments-by-reference-or-pointer/">何时通过引用或指针传递参数？</a></li>
+</ul>
+<h2 class="setext" id="c-字符串">C++ 字符串</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/strings-in-cpp/">C++ 字符串</a></li>
+<li><a href="https://www.geeksforgeeks.org/stdstring-class-in-c/">C++ std::string 类</a></li>
+<li><a href="https://www.geeksforgeeks.org/array-strings-c-3-different-ways-create/">C++ 字符串数组</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-string-functions/">C++ 字符串函数</a></li>
+<li><a href="https://www.geeksforgeeks.org/string-concatenation-in-cpp/">C++ 字符串连接</a></li>
+<li><a href="https://www.geeksforgeeks.org/tokenizing-a-string-cpp/">在 C++ 中分词字符串</a></li>
+<li><a href="https://www.geeksforgeeks.org/substring-in-cpp/">C++ 子字符串</a></li>
+</ul>
+<h2 class="setext" id="c-结构体和共用体">C++ 结构体和共用体</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/structures-unions-and-enumerations-in-cpp/">C++ 结构体、共用体和枚举</a></li>
+<li><a href="https://www.geeksforgeeks.org/structures-in-cpp/">C++ 结构体</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-pointer-to-structure/">C++ 结构体指针</a></li>
+<li><a href="https://www.geeksforgeeks.org/self-referential-structures/">C++ 自我引用结构体</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-c-structures-c-structures/">C 结构体与 C++ 结构体的区别</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-unions/">C++ 共用体</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-bit-fields/">C++ 位域</a></li>
+<li><a href="https://www.geeksforgeeks.org/enumeration-in-cpp/">C++ 枚举</a></li>
+<li><a href="https://www.geeksforgeeks.org/typedef-in-cpp/">C++ typedef</a></li>
+<li><a href="https://www.geeksforgeeks.org/array-of-structures-vs-array-within-a-structure-in-c-and-cpp/">结构体数组与结构体内数组的比较</a></li>
+</ul>
+<h2 class="setext" id="c-动态内存管理">C++ 动态内存管理</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/">C++ 动态内存管理</a></li>
+<li><a href="https://www.geeksforgeeks.org/new-and-delete-operators-in-cpp-for-dynamic-memory/">C++ 的 new 和 delete 操作符</a></li>
+<li><a href="https://www.geeksforgeeks.org/new-vs-malloc-and-free-vs-delete-in-c/">new 与 malloc() 和 free() 与 delete 的区别</a></li>
+<li><a href="https://www.geeksforgeeks.org/memory-leak-in-c-and-how-to-avoid-it/">C++ 中的内存泄漏及如何避免</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-between-static-and-dynamic-memory-allocation-in-c/">C++ 中静态内存分配与动态内存分配的区别</a></li>
+</ul>
+<h2 class="setext" id="c-面向对象编程">C++ 面向对象编程</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/object-oriented-programming-in-cpp/">C++ 面向对象编程 (OOPs)</a>&nbsp;C++ 面向对象编程的基本概念和应用。</li>
+<li><a href="https://www.geeksforgeeks.org/c-classes-and-objects/">C++ 类和对象</a>&nbsp;C++ 中如何定义和使用类及对象。</li>
+<li><a href="https://www.geeksforgeeks.org/access-modifiers-in-c/">C++ 访问修饰符</a>&nbsp;C++ 中的访问修饰符及其用法。</li>
+<li><a href="https://www.geeksforgeeks.org/friend-class-function-cpp/">C++ 友元类和友元函数</a>&nbsp;如何使用友元类和友元函数来访问类的私有成员。</li>
+<li><a href="https://www.geeksforgeeks.org/constructors-c/">C++ 构造函数</a>&nbsp;C++ 构造函数的定义和用法。</li>
+<li><a href="https://www.geeksforgeeks.org/c-internals-default-constructors-set-1/">C++ 默认构造函数</a>&nbsp;C++ 默认构造函数的机制及其行为。</li>
+<li><a href="https://www.geeksforgeeks.org/copy-constructor-in-cpp/">C++ 拷贝构造函数</a>&nbsp;拷贝构造函数的定义和使用。</li>
+<li><a href="https://www.geeksforgeeks.org/destructors-c/">C++ 析构函数</a>&nbsp;C++ 析构函数的作用和用法。</li>
+<li><a href="https://www.geeksforgeeks.org/private-destructor-in-cpp/">C++ 私有析构函数</a>&nbsp;如何定义和使用私有析构函数。</li>
+<li><a href="https://www.geeksforgeeks.org/when-is-a-copy-constructor-called-in-cpp/">何时调用拷贝构造函数？</a>&nbsp;拷贝构造函数的调用时机和条件。</li>
+<li><a href="https://www.geeksforgeeks.org/shallow-copy-and-deep-copy-in-c/">C++ 中的浅拷贝和深拷贝</a>&nbsp;浅拷贝和深拷贝的概念和实现方式。</li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-22/">何时应该编写自己的拷贝构造函数？</a>&nbsp;何时需要自定义拷贝构造函数及其原因。</li>
+<li><a href="https://www.geeksforgeeks.org/does-c-compiler-create-default-constructor-when-we-write-our-own/">如果我们编写自己的构造函数，编译器是否会创建默认构造函数？</a>&nbsp;编译器是否会在编写自定义构造函数时创建默认构造函数。</li>
+<li><a href="https://www.geeksforgeeks.org/cpp-static-data-members/">C++ 静态数据成员</a>&nbsp;静态数据成员的定义和用法。</li>
+<li><a href="https://www.geeksforgeeks.org/static-member-function-in-cpp/">C++ 静态成员函数</a>&nbsp;静态成员函数的定义和用法。</li>
+<li><a href="https://www.geeksforgeeks.org/this-pointer-in-c/">C++ this 指针</a>&nbsp;<code>this</code>&nbsp;指针的使用和作用。</li>
+<li><a href="https://www.geeksforgeeks.org/scope-resolution-operator-vs-this-pointer-in-cpp/">C++ 范围解析运算符与 this 指针</a>&nbsp;范围解析运算符与&nbsp;<code>this</code>&nbsp;指针的比较和区别。</li>
+<li><a href="https://www.geeksforgeeks.org/local-class-in-cpp/">C++ 局部类</a>&nbsp;C++ 中定义和使用局部类的方法。</li>
+<li><a href="https://www.geeksforgeeks.org/nested-classes-in-c/">C++ 嵌套类</a>&nbsp;C++ 中嵌套类的定义和应用。</li>
+<li><a href="https://www.geeksforgeeks.org/enum-classes-in-c-and-their-advantage-over-enum-datatype/">C++ 枚举类</a>&nbsp;枚举类的定义和它相对于传统枚举类型的优势。</li>
+<li><a href="https://www.geeksforgeeks.org/structure-vs-class-in-cpp/">C++ 中结构体与类的区别</a>&nbsp;C++ 中结构体和类的主要区别。</li>
+<li><a href="https://www.geeksforgeeks.org/c-partially-object-oriented-language/">为什么 C++ 是一种部分面向对象的语言？</a>&nbsp;C++ 为什么被认为是部分面向对象的语言。</li>
+</ul>
+<h2 class="setext" id="c-封装和抽象">“C++ 封装和抽象</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/encapsulation-in-c/">C++ 封装</a></li>
+<li><a href="https://www.geeksforgeeks.org/abstraction-in-c/">C++ 抽象</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-between-abstraction-and-encapsulation-in-c/">C++ 中抽象与封装的区别</a></li>
+</ul>
+<h2 class="setext" id="c-多态性">C++ 多态性</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/polymorphism-in-c/">C++ 多态性</a></li>
+<li><a href="https://www.geeksforgeeks.org/function-overriding-in-cpp/">C++ 函数重写</a></li>
+<li><a href="https://www.geeksforgeeks.org/virtual-functions-and-runtime-polymorphism-in-c-set-1-introduction/">C++ 虚函数和运行时多态性</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-between-compile-time-and-run-time-polymorphism-in-java/">C++ 中编译时多态性与运行时多态性的区别</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-between-inheritance-and-polymorphism/">C++ 中继承和多态性的区别</a></li>
+</ul>
+<h2 class="setext" id="c-函数重载">C++ 函数重载</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/function-overloading-c/">C++ 函数重载</a></li>
+<li><a href="https://www.geeksforgeeks.org/constructor-overloading-c/">C++ 构造函数重载</a></li>
+<li><a href="https://www.geeksforgeeks.org/function-overloading-in-c/">C++ 中不能重载的函数</a></li>
+<li><a href="https://www.geeksforgeeks.org/function-overloading-and-const-functions/">C++ 函数重载与 const 关键字</a></li>
+<li><a href="https://www.geeksforgeeks.org/function-overloading-and-return-type-in-cpp/">C++ 函数重载与返回类型</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-30-function-overloading-and-float-in-c/">C++ 函数重载与 float 数据类型</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus-gq/function-overloading-2-gq/">C++ 函数重载与默认参数</a></li>
+<li><a href="https://www.geeksforgeeks.org/can-main-overloaded-c/">主函数（main()）可以重载吗？</a></li>
+<li><a href="https://www.geeksforgeeks.org/function-overloading-vs-function-overriding-in-cpp/">C++ 函数重载与函数重写的区别</a></li>
+<li><a href="https://www.geeksforgeeks.org/advantages-and-disadvantages-of-function-overloading-in-cpp/">C++ 函数重载的优缺点</a></li>
+</ul>
+<h2 class="setext" id="c-运算符重载">C++ 运算符重载</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/operator-overloading-cpp/">C++ 运算符重载</a></li>
+<li><a href="https://www.geeksforgeeks.org/types-of-operator-overloading-in-c/">C++ 运算符重载的类型</a></li>
+<li><a href="https://www.geeksforgeeks.org/functors-in-cpp/">C++ 函子</a></li>
+<li><a href="https://www.geeksforgeeks.org/what-are-the-operators-that-can-be-and-cannot-be-overloaded-in-cpp/">C++ 中不能重载的运算符</a></li>
+</ul>
+<h2 class="setext" id="c-继承">C++ 继承</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/inheritance-in-c/">C++ 继承</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-inheritance-access/">C++ 继承访问权限</a></li>
+<li><a href="https://www.geeksforgeeks.org/multiple-inheritance-in-c/">C++ 多重继承</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-hierarchical-inheritance/">C++ 层次继承</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-multilevel-inheritance/">C++ 多级继承</a></li>
+<li><a href="https://www.geeksforgeeks.org/constructor-in-multiple-inheritance-in-cpp/">C++ 多重继承中的构造函数</a></li>
+<li><a href="https://www.geeksforgeeks.org/inheritance-and-friendship-in-cpp/">C++ 继承与友元</a></li>
+<li><a href="https://www.geeksforgeeks.org/does-overloading-work-with-inheritance/">函数重载在 C++ 继承中有效吗？</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-between-inheritance-and-polymorphism/">C++ 中继承与多态的区别</a></li>
+</ul>
+<h2 class="setext" id="c-虚函数">C++ 虚函数</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/virtual-function-cpp/">C++ 虚函数</a></li>
+<li><a href="https://www.geeksforgeeks.org/virtual-functions-in-derived-classes-in-cpp/">C++ 派生类中的虚函数</a></li>
+<li><a href="https://www.geeksforgeeks.org/default-arguments-and-virtual-function-in-cpp/">C++ 默认参数和虚函数</a></li>
+<li><a href="https://www.geeksforgeeks.org/inline-virtual-function/">C++ 内联虚函数</a></li>
+<li><a href="https://www.geeksforgeeks.org/virtual-destructor/">C++ 虚析构函数</a></li>
+<li><a href="https://www.geeksforgeeks.org/advanced-c-virtual-constructor/">C++ 虚构造函数</a></li>
+<li><a href="https://www.geeksforgeeks.org/advanced-c-virtual-copy-constructor/">C++ 虚复制构造函数</a></li>
+<li><a href="https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/">C++ 纯虚函数和抽象类</a></li>
+<li><a href="https://www.geeksforgeeks.org/pure-virtual-destructor-c/">C++ 纯虚析构函数</a></li>
+<li><a href="https://www.geeksforgeeks.org/can-static-functions-be-virtual-in-cpp/">静态函数可以是虚函数吗？</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-33/">C++ RTTI（运行时类型信息）</a></li>
+<li><a href="https://www.geeksforgeeks.org/can-virtual-functions-be-private-in-c/">C++ 虚函数可以是私有的吗？</a></li>
+</ul>
+<h2 class="setext" id="c-异常处理">C++ 异常处理</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/exception-handling-c/">C++ 异常处理</a></li>
+<li><a href="https://www.geeksforgeeks.org/exception-handling-using-classes-in-cpp/">C++ 使用类进行异常处理</a></li>
+<li><a href="https://www.geeksforgeeks.org/stack-unwinding-in-c/">C++ 栈展开</a></li>
+<li><a href="https://www.geeksforgeeks.org/user-defined-custom-exception-with-class-in-c/">C++ 用户定义的异常</a></li>
+</ul>
+<h2 class="setext" id="c-文件与流">C++ 文件与流</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/file-handling-c-classes/">C++ 文件与流</a></li>
+<li><a href="https://www.geeksforgeeks.org/io-redirection-c/">C++ 输入输出重定向</a></li>
+</ul>
+<h2 class="setext" id="c-模板">C++ 模板</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/templates-cpp/">C++ 模板</a></li>
+<li><a href="https://www.geeksforgeeks.org/template-specialization-c/">C++ 模板特化</a></li>
+<li><a href="https://www.geeksforgeeks.org/using-keyword-in-cpp-stl/">C++ using 关键字</a></li>
+</ul>
+<h2 class="setext" id="c-标准模板库-stl">C++ 标准模板库 (STL)</h2>
+<ul>
+<li><p><a href="https://www.geeksforgeeks.org/the-c-standard-template-library-stl/">C++ 标准模板库 (STL)</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/c-magicians-stl-algorithms/">STL 算法</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/containers-cpp-stl/">STL 容器</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/vector-in-cpp-stl/">STL 向量</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/pair-in-cpp-stl/">STL 对</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/set-in-cpp-stl/">STL 集合</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/multiset-in-cpp-stl/">STL 多重集合</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/stack-in-cpp-stl/">STL 栈</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/queue-cpp-stl/">STL 队列</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/priority-queue-in-cpp-stl/">STL 优先队列</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/deque-cpp-stl/">STL 双端队列</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/list-cpp-stl/">STL 列表</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/forward-list-c-set-1-introduction-important-functions/">STL 前向列表</a></p>
+</li>
+<li><p><a href="http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/">STL 映射</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/multimap-associative-containers-the-c-standard-template-library-stl/">STL 多重映射</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/cpp-bitset-and-its-application/">STL 位集</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/unordered_set-in-cpp-stl/">STL 无序集合</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/cpp-unordered_multiset/">STL 无序多重集合</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/">STL 无序映射</a></p>
+</li>
+<li><p><a href="http://geeksforgeeks.org/unordered_multimap-and-its-application/">STL 无序多重映射</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/introduction-iterators-c/">C++ 迭代器简介</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/input-iterators-in-cpp/">C++ 输入迭代器</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/output-iterators-cpp/">C++ 输出迭代器</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/forward-iterators-in-cpp/">C++ 前向迭代器</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/bidirectional-iterators-in-cpp/">C++ 双向迭代器</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/random-access-iterators-in-cpp/">C++ 随机访问迭代器</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/stdistream_iterator-stdostream_iterator-c-stl/">C++ istream_iterator 和 ostream_iterator</a></p>
+</li>
+<li><p><a href="https://www.geeksforgeeks.org/difference-between-iterators-and-pointers-in-c-c-with-examples/">C++ 迭代器与指针的区别</a></p>
+</li>
+</ul>
+<h2 class="setext" id="c-预处理器">C++ 预处理器</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/cc-preprocessors/">C++ 预处理器</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-preprocessor-directives-set-2/">C++ 预处理器指令</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-c-include-directive-with-examples/">C++ #include 指令</a></li>
+<li><a href="https://www.geeksforgeeks.org/cc-preprocessors/">C++ #define 指令</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-preprocessor-directives-set-2/">C++ 条件预处理</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-between-preprocessor-directives-and-function-templates-in-c/">C++ 预处理器指令与函数模板的区别</a></li>
+</ul>
+<h2 class="setext" id="c-命名空间">C++ 命名空间</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/namespace-in-c/">C++ 命名空间</a></li>
+<li><a href="https://www.geeksforgeeks.org/namespace-in-c-set-2-extending-namespace-and-unnamed-namespace/">扩展 C++ 命名空间和无名命名空间</a></li>
+<li><a href="https://www.geeksforgeeks.org/namespace-c-set-3-creating-header-nesting-aliasing-accessing/">访问、创建头文件、嵌套和别名命名空间</a></li>
+<li><a href="https://www.geeksforgeeks.org/inline-namespaces-usage-using-directive-inside-namespaces/">C++ 内联命名空间</a></li>
+</ul>
+<h2 class="setext" id="高级-c">高级 C++</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/multithreading-in-cpp/">C++ 多线程</a></li>
+<li><a href="https://www.geeksforgeeks.org/smart-pointers-cpp/">C++ 智能指针</a></li>
+<li><a href="https://www.geeksforgeeks.org/auto_ptr-unique_ptr-shared_ptr-weak_ptr-2/">不同 C++ 智能指针的区别</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-77/">C++ 中的 ‘this’ 指针类型</a></li>
+<li><a href="https://www.geeksforgeeks.org/delete-this-in-c/">删除 C++ 中的 ‘this’ 指针</a></li>
+<li><a href="https://www.geeksforgeeks.org/passing-a-function-as-a-parameter-in-cpp/">将 C++ 函数作为参数传递</a></li>
+<li><a href="https://www.geeksforgeeks.org/signal-handling-in-cpp/">C++ 信号处理</a></li>
+<li><a href="https://www.geeksforgeeks.org/generics-in-c/">C++ 泛型</a></li>
+</ul>
+<h2 class="setext" id="c-vs-c">C vs C++</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/difference-between-c-and-c/">C++ 和 C 之间的区别与相似之处</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-between-c-and-objective-c-2/">C++ 和 Objective-C 之间的区别</a></li>
+<li><a href="https://www.geeksforgeeks.org/write-a-c-program-that-wont-compile-in-cpp/">C 程序在 C++ 中无法编译</a></li>
+<li><a href="https://www.geeksforgeeks.org/write-c-program-produce-different-result-c/">在 C 和 C++ 中产生不同结果的程序</a></li>
+<li><a href="https://www.geeksforgeeks.org/how-does-void-differ-in-c-and-cpp/">C 和 C++ 中的 Void * 区别</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-54/">C 和 C++ 中字符字面量的类型差异</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-c-structures-c-structures/">C 中的结构体与 C++ 中的结构体的区别</a></li>
+<li><a href="https://www.geeksforgeeks.org/cincout-vs-scanfprintf/">Cin-Cout 与 Scanf-Printf</a></li>
+</ul>
+<h2 class="setext" id="c-vs-java">C++ vs Java</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/similarities-and-difference-between-java-and-c/">C++ 和 Java 之间的区别与相似之处</a></li>
+<li><a href="https://www.geeksforgeeks.org/comparison-of-inheritance-in-c-and-java/">C++ 与 Java 中的继承</a></li>
+<li><a href="https://www.geeksforgeeks.org/static-keyword-cpp/">C++ 与 Java 中的 static 关键字</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-43/">C++ 与 Java 中的默认虚函数行为</a></li>
+<li><a href="https://www.geeksforgeeks.org/comparison-of-exception-handling-in-c-and-java/">C++ 与 Java 中的异常处理</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-40-foreach-in-c-and-java/">C++ 与 Java 中的 Foreach 循环</a></li>
+<li><a href="https://www.geeksforgeeks.org/templates-in-c-vs-generics-in-java/">C++ 中的模板与 Java 中的泛型</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-39-floating-point-operations-associativity/">C、C++ 和 Java 中的浮点运算及结合性</a></li>
+</ul>
+<h2 class="setext" id="c编程竞赛">C++编程竞赛</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/competitive-programming-a-complete-guide/">竞赛编程完全指南</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-tricks-competitive-programming-c-11/">C++ 竞赛编程技巧</a></li>
+<li><a href="https://www.geeksforgeeks.org/writing-cc-code-efficiently-in-competitive-programming/">在竞赛编程中高效编写 C/C++ 代码</a></li>
+<li><a href="https://www.geeksforgeeks.org/why-cpp-is-best-for-competitive-programming/">为何 C++ 是竞赛编程的最佳选择？</a></li>
+<li><a href="https://www.geeksforgeeks.org/test-case-generation-set-1-random-numbers-arrays-and-matrices/">在 C++ 中生成测试用例</a></li>
+<li><a href="https://www.geeksforgeeks.org/fast-io-for-competitive-programming/">C++ 竞赛编程中的快速输入输出</a></li>
+<li><a href="https://www.geeksforgeeks.org/setting-up-sublime-text-for-cpp-competitive-programming-environment/">为 C++ 竞赛编程环境设置 Sublime Text</a></li>
+<li><a href="https://www.geeksforgeeks.org/how-to-setup-competitive-programming-in-visual-studio-code-for-c/">为 C++ 竞赛编程环境设置 VS Code</a></li>
+<li><a href="https://www.geeksforgeeks.org/which-c-libraries-are-useful-for-competitive-programming/">哪些 C++ 库对竞赛编程有用？</a></li>
+<li><a href="https://www.geeksforgeeks.org/common-mistakes-avoided-competitive-programming-c-beginners/">在 C++ 竞赛编程中需要避免的常见错误</a></li>
+</ul>
+<h2 class="setext" id="c-面试题">C++ 面试题</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/cpp-interview-questions/">Top 50 C++ 面试题及答案</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-stl-interview-questions/">顶级 C++ STL 面试题及答案</a></li>
+<li><a href="https://www.geeksforgeeks.org/oops-interview-questions/">30 个面向对象编程面试题及答案</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-exception-handling-interview-questions-and-answers/">顶级 C++ 异常处理面试题及答案</a><p></p>
+</li>
+</ul>
+<h1 class="atx" id="寄语：">寄语：</h1>
+<h1 class="atx" id="万事开头难，坚定了自己的方向就要勇敢走下去。">万事开头难，坚定了自己的方向就要勇敢走下去。</h1>
+<h1 class="atx" id="要勇于尝试，不要怕失败。">要勇于尝试，不要怕失败。</h1>
+<h1 class="atx" id="输不可怕，怕才可怕。">输不可怕，怕才可怕。</h1>
+</article>
+  
+</body>
+</html>
